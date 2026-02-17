@@ -8,10 +8,22 @@ void preencherVetorDecrescente(int *vetor, int tamanho) {
 }
 
 void bubbleSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes) {
-    
-    
-}
+    *comparacoes = 0;
+    *movimentacoes = 0;
+    int i, j , temp;
 
+    for(i = 0; i <tamanho -1, i++){
+        for (j = 0; j<tamanho -i; j++){
+         (*comparacoes)++;
+            if (vetor[j] > vetor [j+1]{
+                temp = vetor[j];
+                vetor [j] = vetor[j+1];
+                vetor[j+1]= temp;
+                (*movimentacoes)++       
+              }
+         }
+    }
+}
 void selectionSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes) {
     
 }
