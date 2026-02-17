@@ -15,7 +15,7 @@ void bubbleSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes) {
     for(i = 0; i <tamanho -1; i++){
         for (j = 0; j<tamanho -i - 1; j++){
          (*comparacoes)++;
-            if (vetor[j] > vetor [j+1){
+            if (vetor[j] > vetor [j+1]){
                 temp = vetor[j];
                 vetor [j] = vetor[j+1];
                 vetor[j+1]= temp;
