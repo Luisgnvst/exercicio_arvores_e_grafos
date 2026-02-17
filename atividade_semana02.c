@@ -5,21 +5,21 @@
 void preencherVetorDecrescente(int *vetor, int tamanho) {
     for (int i = 0; i< tamanho; i++){
         vetor[i] = tamanho -1;
+  }
 }
-
 void bubbleSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes) {
     *comparacoes = 0;
     *movimentacoes = 0;
     int i, j , temp;
 
-    for(i = 0; i <tamanho -1, i++){
-        for (j = 0; j<tamanho -i; j++){
+    for(i = 0; i <tamanho -1; i++){
+        for (j = 0; j<tamanho -i - 1; j++){
          (*comparacoes)++;
-            if (vetor[j] > vetor [j+1]{
+            if (vetor[j] > vetor [j+1){
                 temp = vetor[j];
                 vetor [j] = vetor[j+1];
                 vetor[j+1]= temp;
-                (*movimentacoes)++       
+                (*movimentacoes)++;       
               }
          }
     }
@@ -30,7 +30,7 @@ void selectionSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes
     int i, j , min_idx, temp;
     for (i = 0; i<tamanho-1;i++) {
         min_idx = i;
-        for (j = i + 1; j <tamanho; i++){
+        for (j = i + 1; j <tamanho; j++){
             (*comparacoes)++;
             if (vetor[j] < vetor [min_idx]) {
                 min_idx = j;
@@ -40,7 +40,7 @@ void selectionSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes
             temp= vetor[min_idx];
             vetor[min_idx] = vetor[i];
             vetor[i] = temp;
-            (*moviementacoes)++;
+            (*movimentacoes)++;
         }
     }
 }
