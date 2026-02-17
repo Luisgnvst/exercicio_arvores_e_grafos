@@ -3,7 +3,8 @@
 #include <time.h>
 
 void preencherVetorDecrescente(int *vetor, int tamanho) {
-    
+    for (int i = 0; i< tamanho; i++){
+        vetor[i] = tamanho -1;
 }
 
 void bubbleSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes) {
